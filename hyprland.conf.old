@@ -1,0 +1,11 @@
+# Disable the internal laptop screen entirely
+monitor = eDP-1, disable
+
+# Let the external monitor configure itself automatically
+monitor = DP-3, preferred, auto, 1
+
+# Trigger when the lid is closed
+bindl = , switch:on:Lid Switch, exec, hyprctl keyword monitor "eDP-1, disable"
+
+# Trigger when the lid is opened
+bindl = , switch:off:Lid Switch, exec, hyprctl keyword monitor "eDP-1, preferred, auto, 1"

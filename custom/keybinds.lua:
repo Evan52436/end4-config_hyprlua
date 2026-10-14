@@ -1,0 +1,1 @@
+hl.bind("CTRL, SUPER, L", hl.dsp.exec_cmd("/home/chargerleptop/.local/bin/rotation-lock.sh"))
